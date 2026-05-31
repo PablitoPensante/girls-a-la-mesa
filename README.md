@@ -2,6 +2,10 @@
 
 Landing page estatica para promocionar el podcast **Girls a la mesa**.
 
+Pagina publicada:
+
+https://pablitopensante.github.io/girls-a-la-mesa/
+
 ## Como verla
 
 Abre `index.html` directamente en el navegador o ejecuta:
@@ -22,6 +26,4 @@ Guarda estas imagenes en la carpeta `assets`:
 
 ## Pendiente por definir con la clienta
 
-- Si quiere agregar mas redes ademas de YouTube.
 - Si quiere una seccion con varios episodios o solo el episodio destacado.
-- Donde se publicara la pagina.
