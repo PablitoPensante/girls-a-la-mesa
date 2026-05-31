@@ -21,8 +21,8 @@ Netlify, Vercel o GitHub Pages.
 
 Guarda estas imagenes en la carpeta `assets`:
 
-- `logo.png`: logo cuadrado del podcast.
-- `characters.png`: ilustracion de las dos chicas para el hero.
+- `logo.png.jpeg`: logo cuadrado del podcast.
+- `characters.png.jpeg`: ilustracion de las dos chicas para el hero.
 
 ## Pendiente por definir con la clienta
 
