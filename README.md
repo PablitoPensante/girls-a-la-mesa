@@ -23,6 +23,8 @@ Guarda estas imagenes en la carpeta `assets`:
 
 - `logo.png.jpeg`: logo cuadrado del podcast.
 - `characters.png.jpeg`: ilustracion de las dos chicas para el hero.
+- `characters-cutout.png`: personajes separados para la portada.
+- `fondo nube.png`: fondo limpio de nubes de la pagina.
 - `Fondo.jpeg`: fondo principal de la pagina.
 - `Fondo-mobile.jpeg`: fondo vertical optimizado para telefonos.
 - `cloud-mark.png`: nubecita del encabezado.
