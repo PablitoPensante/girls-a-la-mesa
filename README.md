@@ -22,6 +22,6 @@ Guarda estas imagenes en la carpeta `assets`:
 
 ## Pendiente por definir con la clienta
 
-- Enlaces reales de Instagram, TikTok y YouTube.
+- Si quiere agregar mas redes ademas de YouTube.
 - Si quiere una seccion con varios episodios o solo el episodio destacado.
 - Donde se publicara la pagina.
