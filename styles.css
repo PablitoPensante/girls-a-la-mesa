@@ -99,30 +99,26 @@ a {
 
 .hero {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr;
-  min-height: calc(100vh - 74px);
-  padding: clamp(48px, 8vw, 96px) clamp(18px, 5vw, 80px);
+  min-height: auto;
+  padding: 0;
   overflow: hidden;
-  align-items: end;
+  background: #ffd9ec;
 }
 
-.hero::before {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  content: "";
-  background:
-    linear-gradient(rgba(255, 246, 252, 0.08), rgba(255, 246, 252, 0.24)),
-    url("assets/Fondo.jpeg") center top / cover no-repeat;
+.hero-background {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .hero-content {
-  position: relative;
+  position: absolute;
+  top: clamp(28px, 3vw, 72px);
+  left: clamp(22px, 5vw, 80px);
   z-index: 2;
-  width: min(680px, 100%);
-  margin-right: auto;
-  padding-top: clamp(220px, 34vw, 430px);
+  width: min(520px, 42vw);
+  margin: 0;
+  padding-top: 0;
 }
 
 .eyebrow,
@@ -426,18 +422,7 @@ p {
   }
 
   .hero {
-    grid-template-columns: 1fr;
-    min-height: auto;
-    padding: 330px 18px 54px;
-    align-items: start;
-  }
-
-  .hero::before {
-    bottom: auto;
-    height: 320px;
-    background:
-      linear-gradient(rgba(255, 246, 252, 0.04), rgba(255, 246, 252, 0.12)),
-      url("assets/Fondo.jpeg") left top / auto 100% no-repeat;
+    padding: 0 0 46px;
   }
 
   .hero-art {
@@ -445,8 +430,11 @@ p {
   }
 
   .hero-content {
-    width: min(520px, 100%);
-    margin: 0 auto;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: min(520px, calc(100% - 32px));
+    margin: 14px auto 0;
     padding: 22px 18px 24px;
     text-align: center;
     background: rgba(255, 250, 253, 0.72);
