@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Girls a la mesa, un podcast para conversar sin filtros ni presiones."
+    />
+    <title>Girls a la mesa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:ital,wght@0,400;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Girls a la mesa inicio">
+        <span class="brand-mark">G</span>
+        <span>Girls a la mesa</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegacion principal">
+        <a href="#podcast">Podcast</a>
+        <a href="#nosotras">Nosotras</a>
+        <a href="#redes">Redes</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-art" aria-hidden="true">
+          <div class="cloud cloud-one"></div>
+          <div class="cloud cloud-two"></div>
+          <div class="cloud cloud-three"></div>
+          <div class="character-fallback">Girls a la mesa</div>
+          <img
+            class="hero-characters"
+            src="assets/characters.png"
+            alt=""
+            onerror="this.classList.add('missing-image')"
+          />
+        </div>
+
+        <div class="hero-content">
+          <p class="eyebrow">Nuevo episodio cada miercoles</p>
+          <h1>Girls a la mesa</h1>
+          <p>
+            Un podcast para sentarnos a hablar de lo que nos interesa, compartir
+            risas, opiniones y reflexiones sin filtros ni presiones.
+          </p>
+          <a class="primary-action" href="#podcast">Escuchar episodio</a>
+        </div>
+      </section>
+
+      <section class="podcast-section" id="podcast">
+        <div class="episode-card">
+          <div class="cover-wrap" data-fallback="Logo pendiente">
+            <img
+              class="episode-cover"
+              src="assets/logo.png"
+              alt="Logo de Girls a la mesa"
+              onerror="this.classList.add('missing-image')"
+            />
+          </div>
+
+          <div class="episode-info">
+            <p class="section-label">Episodio destacado</p>
+            <h2>Adolescentes escogiendo su futuro</h2>
+            <p>
+              Una charla sobre decisiones, dudas y caminos posibles mientras
+              crecemos y pensamos en lo que viene.
+            </p>
+
+            <div class="spotify-player">
+              <iframe
+                src="https://creators.spotify.com/pod/profile/girly-girls/embed/episodes/Adolescentes-escogiendo-su-futuro-e2uh92n/a-abp3b8c"
+                height="102"
+                width="400"
+                frameborder="0"
+                scrolling="no"
+                title="Reproductor de Spotify para Girls a la mesa"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="nosotras">
+        <div>
+          <p class="section-label">Bienvenidas</p>
+          <h2>Conversaciones autenticas, sin guion</h2>
+        </div>
+        <p>
+          Aqui, un grupo diverso de personas se junta para hablar de lo que esta
+          pasando en el mundo y de aquello que atraviesa a las adolescentes hoy.
+          Si te gustan las conversaciones cercanas y honestas, este es tu lugar.
+        </p>
+      </section>
+
+      <section class="social-section" id="redes">
+        <p class="section-label">Siguenos</p>
+        <h2>Encuentra el proyecto en redes</h2>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram de Girls a la mesa">Instagram</a>
+          <a href="#" aria-label="TikTok de Girls a la mesa">TikTok</a>
+          <a href="#" aria-label="YouTube de Girls a la mesa">YouTube</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Girls a la mesa. Podcast transmedia.</p>
+    </footer>
+  </body>
+</html>
