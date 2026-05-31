@@ -118,15 +118,18 @@ a {
 .hero {
   position: relative;
   display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1fr);
+  gap: clamp(28px, 5vw, 72px);
   min-height: calc(100vh - 74px);
   padding: clamp(48px, 8vw, 96px) clamp(18px, 5vw, 80px);
   overflow: hidden;
-  place-items: center;
+  align-items: center;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
+  order: 1;
   width: min(680px, 100%);
   margin-right: auto;
 }
@@ -189,13 +192,18 @@ p {
 }
 
 .hero-art {
-  position: absolute;
-  inset: 0;
+  position: relative;
+  z-index: 1;
+  order: 2;
+  display: grid;
+  min-height: min(520px, 56vw);
+  place-items: center;
 }
 
 .cloud {
   position: absolute;
-  width: 42vw;
+  z-index: -1;
+  width: 70%;
   max-width: 620px;
   aspect-ratio: 1.7;
   border-radius: 999px;
@@ -204,28 +212,28 @@ p {
 }
 
 .cloud-one {
-  top: 8%;
-  right: 4%;
+  top: 2%;
+  right: 2%;
   background: var(--soft-pink);
 }
 
 .cloud-two {
-  right: -8%;
-  bottom: 2%;
+  right: -10%;
+  bottom: 8%;
   background: var(--blue);
 }
 
 .cloud-three {
-  left: -10%;
-  bottom: 8%;
+  left: -8%;
+  bottom: 4%;
   background: var(--pink);
 }
 
 .hero-characters {
-  position: absolute;
-  top: 14%;
-  right: 5%;
-  width: min(560px, 44vw);
+  position: relative;
+  top: auto;
+  right: auto;
+  width: min(680px, 100%);
   aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: center;
@@ -234,7 +242,7 @@ p {
   border-radius: 32px;
   box-shadow: var(--shadow);
   filter: drop-shadow(0 22px 34px rgba(75, 44, 76, 0.16));
-  transform: rotate(-3deg);
+  transform: rotate(-2deg);
 }
 
 .hero-art:has(.hero-characters:not(.missing-image)) .character-fallback {
@@ -243,10 +251,9 @@ p {
 
 .character-fallback {
   position: absolute;
-  top: 14%;
-  right: 8%;
+  inset: 12% 8%;
   display: grid;
-  width: min(460px, 36vw);
+  width: auto;
   aspect-ratio: 1.35;
   place-items: center;
   color: var(--hot-pink);
@@ -420,8 +427,13 @@ p {
   }
 
   .hero {
+    grid-template-columns: 1fr;
     min-height: auto;
     padding-top: 88px;
+  }
+
+  .hero-art {
+    min-height: auto;
   }
 
   .hero-content {
@@ -445,15 +457,9 @@ p {
 
   .character-fallback {
     position: relative;
-    top: auto;
-    right: auto;
+    inset: auto;
     width: min(520px, 92vw);
     margin: 32px auto 0;
-  }
-
-  .hero-art {
-    position: static;
-    order: 2;
   }
 
   .episode-card,
