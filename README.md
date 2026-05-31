@@ -22,6 +22,7 @@ Netlify, Vercel o GitHub Pages.
 Guarda estas imagenes en la carpeta `assets`:
 
 - `logo.png.jpeg`: logo cuadrado del podcast.
+- `111.png`: logo/arte usado en la tarjeta principal del podcast.
 - `characters.png.jpeg`: ilustracion de las dos chicas para el hero.
 - `characters-cutout.png`: personajes separados para la portada.
 - `fondo nube.png`: fondo limpio de nubes de la pagina.
