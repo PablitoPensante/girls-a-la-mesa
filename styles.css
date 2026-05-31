@@ -25,8 +25,6 @@ body {
   color: var(--ink);
   font-family: "Nunito", Arial, sans-serif;
   background:
-    linear-gradient(rgba(255, 246, 252, 0.16), rgba(255, 246, 252, 0.34)),
-    url("assets/Fondo.jpeg") center top / cover fixed no-repeat,
     linear-gradient(135deg, #fff6ee 0%, #ffd6e9 48%, #b9e1ff 100%);
 }
 
@@ -106,6 +104,16 @@ a {
   padding: clamp(48px, 8vw, 96px) clamp(18px, 5vw, 80px);
   overflow: hidden;
   align-items: end;
+}
+
+.hero::before {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  content: "";
+  background:
+    linear-gradient(rgba(255, 246, 252, 0.08), rgba(255, 246, 252, 0.24)),
+    url("assets/Fondo.jpeg") center top / cover no-repeat;
 }
 
 .hero-content {
@@ -397,24 +405,38 @@ p {
 
 @media (max-width: 800px) {
   body {
-    background-attachment: scroll;
-    background-position: center top;
+    background:
+      linear-gradient(180deg, #f7fbff 0%, #ffd9ec 46%, #bfe7fb 100%);
   }
 
   .site-header {
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
+    gap: 12px;
+    padding: 12px 16px 14px;
   }
 
   .main-nav {
     width: 100%;
-    overflow-x: auto;
+    justify-content: center;
+    gap: 4px;
+    overflow-x: visible;
+    font-size: 1rem;
   }
 
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
-    padding-top: 88px;
+    padding: 330px 18px 54px;
+    align-items: start;
+  }
+
+  .hero::before {
+    bottom: auto;
+    height: 320px;
+    background:
+      linear-gradient(rgba(255, 246, 252, 0.04), rgba(255, 246, 252, 0.12)),
+      url("assets/Fondo.jpeg") left top / auto 100% no-repeat;
   }
 
   .hero-art {
@@ -422,12 +444,22 @@ p {
   }
 
   .hero-content {
+    width: min(520px, 100%);
+    margin: 0 auto;
+    padding: 22px 18px 24px;
     text-align: center;
+    background: rgba(255, 250, 253, 0.72);
+    border: 2px solid rgba(255, 255, 255, 0.82);
+    border-radius: 24px;
+    box-shadow: 0 18px 46px rgba(135, 60, 105, 0.16);
+    backdrop-filter: blur(10px);
   }
 
   .hero-content p:not(.eyebrow) {
     margin-right: auto;
     margin-left: auto;
+    font-size: 1.05rem;
+    line-height: 1.55;
   }
 
   .hero-characters {
@@ -452,8 +484,25 @@ p {
     grid-template-columns: 1fr;
   }
 
+  .podcast-section,
+  .about-section,
+  .social-section {
+    padding: 46px 16px;
+  }
+
   .episode-info {
     text-align: center;
+  }
+
+  .episode-info h2,
+  .about-section h2,
+  .social-section h2 {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+  }
+
+  .cover-wrap {
+    width: min(280px, 100%);
+    margin: 0 auto;
   }
 
   .episode-info p:not(.section-label),
@@ -468,9 +517,15 @@ p {
     font-size: 1rem;
   }
 
+  .brand-mark {
+    width: 58px;
+    max-height: 42px;
+  }
+
   .main-nav a,
   .social-links a,
   .primary-action {
+    min-height: 38px;
     padding-right: 12px;
     padding-left: 12px;
   }
@@ -480,6 +535,7 @@ p {
   }
 
   .episode-card {
+    padding: 18px;
     border-radius: 22px;
   }
 
