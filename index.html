@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:ital,wght@0,400;0,700;1,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260530-mobile-2" />
+    <link rel="stylesheet" href="styles.css?v=20260530-mobile-3" />
   </head>
   <body>
     <header class="site-header">
@@ -38,7 +38,7 @@
           <div class="cloud cloud-three"></div>
           <div class="character-fallback">Girls a la mesa</div>
           <img
-            class="hero-characters"
+            class="hero-characters is-loaded"
             src="assets/characters.png.jpeg"
             alt=""
             onerror="this.classList.add('missing-image')"
@@ -58,9 +58,9 @@
 
       <section class="podcast-section" id="podcast">
         <div class="episode-card">
-          <div class="cover-wrap" data-fallback="Logo pendiente">
+          <div class="cover-wrap has-image" data-fallback="Logo pendiente">
             <img
-              class="episode-cover"
+              class="episode-cover is-loaded"
               src="assets/logo.png.jpeg"
               alt="Logo de Girls a la mesa"
               onerror="this.classList.add('missing-image')"
