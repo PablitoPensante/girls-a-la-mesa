@@ -61,7 +61,7 @@ a {
 }
 
 .brand {
-  gap: 10px;
+  gap: 8px;
   color: var(--hot-pink);
   font-family: "Fredoka", Arial, sans-serif;
   font-size: 1.15rem;
@@ -69,8 +69,11 @@ a {
 }
 
 .brand-mark {
-  width: 48px;
-  height: 38px;
+  display: block;
+  flex: 0 0 auto;
+  width: 68px;
+  height: auto;
+  max-height: 48px;
   object-fit: contain;
   filter: drop-shadow(0 6px 10px rgba(196, 20, 120, 0.22));
 }
