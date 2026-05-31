@@ -69,15 +69,10 @@ a {
 }
 
 .brand-mark {
-  display: grid;
-  width: 36px;
-  height: 36px;
-  color: white;
-  place-items: center;
-  background: linear-gradient(135deg, var(--hot-pink), var(--pink));
-  border: 3px solid white;
-  border-radius: 50%;
-  box-shadow: 0 8px 20px rgba(196, 20, 120, 0.22);
+  width: 48px;
+  height: 38px;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 10px rgba(196, 20, 120, 0.22));
 }
 
 .main-nav {
