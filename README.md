@@ -23,6 +23,7 @@ Guarda estas imagenes en la carpeta `assets`:
 
 - `logo.png.jpeg`: logo cuadrado del podcast.
 - `characters.png.jpeg`: ilustracion de las dos chicas para el hero.
+- `Fondo.jpeg`: fondo principal de la pagina.
 
 ## Pendiente por definir con la clienta
 
